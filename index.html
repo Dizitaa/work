@@ -1,50 +1,40 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site Pessoal</title>
-    <link rel="stylesheet" href="style.css">
-     <!-- Adicionando Font Awesome para ícones -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'rel='stylesheet'></linkhref>
+    <link rel="stylesheet" href="styles.css">
+    <title>DevClub Login</title>
 </head>
 <body>
-    <!-- Cabeçalho com menu de navegação -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="sobre.html">Sobre Mim</a></li>
-                <li><a href="formacao.html">Formação</a></li>
-                <li><a href="portfolio.html">Portfólio</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+    <main class="container">
+        <form>
+            <h1>Login DevClub</h1>
+            <div class="input-box">
+                <input placeholder="Usuario" type="email">
+                <i class="bx bxs-user"></i>
+            </div>
+            <div class="input-box">
+                <input placeholder="Senha" type="password">
+                <i class="bx bxs-lock-alt"></i> 
+            </div>
 
-    <!-- Conteúdo principal -->
-    <main>
-        <h1><center>Bem-vindo ao Meu Site Pessoal</center></h1>
-        <p>Este site foi desenvolvido para apresentar meu perfil profissional e acadêmico</p>
-        <p>Navegue pelo menu para conhecer mais sobre mim, caso precise entre em contato.</p>
+            <div class="remember-forgot">
+                <label> 
+                <input type="checkbox">
+                Lembrar senha 
+                </label>
+                <a href="#">Esqueci senha</a>
+            </div>
+            <button type="submit" class="login">Login</button>
+
+            <div class="register-link">
+                <p>Nao tem uma conta? <a href="#">Cadastre-se</a></p>
+            </div>
+        </form>
+
     </main>
-
-    <!-- Seção de Redes Sociais -->
-    <div class="social-links">
-        <a href="https://www.linkedin.com/in/diovana-santana-97674b208/" target="_blank" aria-label="LinkedIn">
-            <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="https://www.instagram.com/diovana__santana" target="_blank" aria-label="Instagram">
-            <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://github.com/Dizitaa" target="_blank" aria-label="GitHub">
-            <i class="fab fa-github"></i>
-        </a>
-    </div>
-
-    <!-- Rodapé -->
-    <footer>
-        <p>&copy; 2025 Meu Site Pessoal</p>
-    </footer>
+    
 </body>
 </html>
