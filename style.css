@@ -1,0 +1,175 @@
+/* Reset básico para remover margens e paddings padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais do corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #000000;
+    background-color: #f4f4f4;
+}
+
+/* Estilização do cabeçalho e menu de navegação */
+header {
+    background-color: #e92671;
+    color: white;
+    padding: 1rem 0;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #ff6bc1;
+}
+
+/* Estilos do conteúdo principal */
+main {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+/* Estilos do rodapé */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #e92671;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Estilos específicos para a página de contato */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+button {
+    background-color: #fa1f73;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: rgb(245, 234, 239);
+    color: #f05ac3;
+}
+
+/* Estilos para a página do portfólio */
+.projeto {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.projeto h3 {
+    margin-bottom: 10px;
+}
+
+.projeto a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #c91b63;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.projeto a:hover {
+    text-decoration: underline;
+}
+
+.imagem {
+    width: 100%;       /* Largura relativa ao container */
+    max-width: 600px;  /* Largura máxima */
+    height: auto;      /* Altura ajustada automaticamente */
+}
+
+/* Estilos para a seção de redes sociais */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px 0;
+    background-color: #f8f9fa;
+    margin-top: 30px;
+}
+
+.social-links a {
+    color: #c5065f;
+    font-size: 28px;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-links a:hover {
+    transform: translateY(-3px);
+}
+
+.social-links a:hover.fa-linkedin {
+    color: #0a66c2;
+}
+
+.social-links a:hover.fa-instagram {
+    color: #e4405f;
+}
+
+.social-links a:hover.fa-github {
+    color: #333;
+}
